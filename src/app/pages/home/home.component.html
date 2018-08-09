@@ -1,0 +1,35 @@
+<div class="fondoimagen imagenbanner">
+  <div class=row>
+      <div class="col-lg-1"></div>
+          <div class="nombre noto-sans col-lg-10">
+              <h1>Asociación Frutihorticola de Puerto Rico</h1>
+          </div>
+      <div class="col-lg-1"></div>
+  </div>
+  <div class=row>
+      <div class="col-lg-1"></div>
+          <div class="linea col-lg-10"></div>
+      <div class="col-lg-1"></div>
+
+  </div>
+</div>
+<br>
+<div class=row>  
+  <div class="col-lg-1"></div>
+  <div class="col-lg-10">
+    <div class="card-group" >
+      <div class="card"  *ngFor="let a of tarjetas">
+        <div class="opciones"  id="{{a.id}}">
+          <div class="card-header opciones-header">{{a.titulo}}</div><!--Cierra Card-header-->
+          <div class="card-body">
+            <img class="card-img" src="../../../assets/images/{{a.imagen}}" alt="{{a.titulo}}">
+            <div class="contenido">
+                {{a.descripcion}}
+            </div><!--cierra contenido-->
+          </div><!--Cierra card-body-->
+        </div><!--cierra el id-->
+      </div><!--Cierra card-->
+    </div><!--Cierra card-group-->
+  </div>
+  <div class="col-lg-1"></div>
+</div>
