@@ -1,0 +1,33 @@
+<div class="fondoimagen ">
+  <br>
+  <br>
+  <br>
+  <div class="container">
+    <h1>Sacha Inchi</h1>
+    <div class="row">
+      <div class="col-3" style="text-align: center;">
+        <img class="img-responsive" style="height: 200px; " src="../../../assets/images/aceite_sachaInchi.jpg" alt="">
+      </div>
+      <div class="col-1"></div>
+      <div class="col-8 texto">
+        <p>El Sacha Inchi es una planta conocida como <strong>'maní de los incas'</strong> oriunda de la selva del Perú, la planta genera una nuez de la que se extrae su aceite.</p>
+        <p>El aceite obtenido se caracteriza por tener un alto contenido de ácidos grasos <strong>Omega 3</strong> (más del 48%), <strong>Omega 6</strong> (36%) y <strong>Omega 9</strong> (8%); además contiene antioxidantes, vitamina A y alfa-tocoferol y vitamina E.</p>
+      </div>
+    </div>
+    <br>
+    <div class="card-deck">
+      <div class="card border-success mb-3" *ngFor="let agro of data_agroindustria" >
+        <div class="card-header bg-success border-success">{{agro.data.titulo}}</div>
+        <div class="card-img-top" style="text-align: center;">
+          <img class="img-responsive" style="height: 100px;" src="{{agro.data.image}}" alt="{{agro.data.titulo}}">
+        </div>
+        <div class="card-body text-dark">
+          <h5 class="card-title"></h5>
+          <p class="card-text">{{agro.data.descripcion}}</p>
+        </div>
+        <div class="card-footer bg-success border-success">${{agro.data.precio}}</div>
+      </div>
+    </div>
+  </div>
+  <br>
+</div>

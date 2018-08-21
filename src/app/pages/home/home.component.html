@@ -2,7 +2,7 @@
   <div class=row>
       <div class="col-lg-1"></div>
           <div class="nombre noto-sans col-lg-10">
-              <h1>Asociación Frutihorticola de Puerto Rico</h1>
+                <h1>Asociación Frutihorticola de Puerto Rico</h1>
           </div>
       <div class="col-lg-1"></div>
   </div>
@@ -13,18 +13,19 @@
 
   </div>
 </div>
-<br>
-<div class=row>  
+<div class="fondoimagen foperaciones">
+<div class="row">  
   <div class="col-lg-1"></div>
   <div class="col-lg-10">
-    <div class="card-group" >
-      <div class="card"  *ngFor="let a of tarjetas">
-        <div class="opciones"  id="{{a.id}}">
-          <div class="card-header opciones-header">{{a.titulo}}</div><!--Cierra Card-header-->
+    <div class="card-group operaciones" >
+      <div class="card border-light bg-transparent"  *ngFor="let contenido of data_operaciones">
+        <div class="opciones"  id="{{contenido.data.id}}">
+          <div class="card-header opciones-header">{{contenido.data.titulo}}</div><!--Cierra Card-header-->
           <div class="card-body">
-            <img class="card-img" src="../../../assets/images/{{a.imagen}}" alt="{{a.titulo}}">
+            <img class="card-img" src="{{contenido.data.image}}" alt="{{contenido.data.titulo}}">
             <div class="contenido">
-                {{a.descripcion}}
+                {{contenido.data.descripcion}}
+                <a href="{{contenido.data.link}}">Ver más</a>
             </div><!--cierra contenido-->
           </div><!--Cierra card-body-->
         </div><!--cierra el id-->
@@ -32,4 +33,39 @@
     </div><!--Cierra card-group-->
   </div>
   <div class="col-lg-1"></div>
+</div>
+</div>
+<div class="fondoimagen servicios">
+  <div class="row">  
+    <div class="col-lg-1"></div>
+    <div class="col-lg-10">
+      <div class="card-deck" >
+        <div class="card border-light"  *ngFor="let servicio of data_servicios">
+          <div class="opciones"  id="{{servicio.data.id}}">
+            <img class="card-img-top img-thumbnail" src="{{servicio.data.image}}" alt="{{servicio.data.titulo}}">
+            <div class="bg-transparent tservicios"><a href="{{servicio.data.link}}">{{servicio.data.titulo}}</a></div><!--Cierra Card-header-->
+          </div><!--cierra el id-->
+        </div><!--Cierra card-->
+      </div><!--Cierra card-group-->
+    </div>
+    <div class="col-lg-1"></div>
+  </div>
+</div>
+<div class="fondoimagen aliados">
+  <h4>Aliados Estrátegicos</h4>
+  <div class="row">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-10">
+      <div class="row">
+        <div class="col"  *ngFor="let aliado of data_aliados">
+          <a target="_blank"  href="{{aliado.data.url}}">
+            <img class="rounded" src="{{aliado.data.image}}" alt="{{aliado.data.titulo}}" height="140" width="140">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-1"></div>
+  </div>
+  <br>
+  <br>
 </div>

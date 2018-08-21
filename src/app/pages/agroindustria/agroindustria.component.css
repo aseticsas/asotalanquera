@@ -1,0 +1,47 @@
+.fondoimagen
+{
+    background-image: url("../../../assets/images/fondo_agroindustria.jpg");
+}
+.container h1 {
+    color: white;
+    text-align:center;
+    padding-left: 15px;
+    background: rgb(246,230,180); 
+    background: -moz-linear-gradient(top, rgba(246,230,180,1) 0%, rgba(237,144,23,1) 100%); 
+    background: -webkit-linear-gradient(top, rgba(246,230,180,1) 0%,rgba(237,144,23,1) 100%); 
+    background: linear-gradient(to bottom, rgba(246,230,180,1) 0%,rgba(237,144,23,1) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', endColorstr='#ed9017',GradientType=0 ); 
+}
+.texto
+{
+    text-align: justify;
+    padding: 20px;
+    height: 200px;
+    overflow-y: scroll;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.5) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#80ffffff',GradientType=0 ); /* IE6-9 */
+}
+.texto strong
+{
+    color:  #9ecb2d;
+    text-shadow: 1px 0 1px #292929;
+}
+.card-header
+{
+    color: white;
+    font-size: 1.5 em;
+    text-align:center;
+}
+.card-footer
+{
+    color: white;
+    font-size: 1.5 em;
+    text-align:center;
+}
+.card-deck img:hover 
+{ 
+    -webkit-transform: scale(4.0);
+    transform: scale(4.0)
+}

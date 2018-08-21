@@ -1,12 +1,16 @@
 .fondomenu
 {
     -webkit-box-shadow: 1px 1px 2px 1px #2E2E2E;
-    box-shadow: 1px 1px 2px 1px #2E2E2E;  
+    box-shadow: 1px 1px 2px 1px #2E2E2E;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.5) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#80ffffff',GradientType=0 ); /* IE6-9 */  
 }
 .navbar a
 {
     color: azure;
-    text-shadow: 1px 1px 1px #5B695A;
+    text-shadow: 0 1px 1px #383332;
 }
 .navbar a:hover
 {
@@ -15,6 +19,6 @@
 }
 .active
 {
-    background-color: #9ecb2d;
+    background-color: #9ecb2d;   
     color: azure;
 }
